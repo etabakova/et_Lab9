@@ -8,9 +8,9 @@ def encode(password):
 
 def decode(encoded_password):
     decoded_password = ""
-    for char in encoded_password:
-        char = int(char) - 3
-        decoded_password = f"{decoded_password}{char}"
+    for digit in encoded_password:
+        digit = int(digit) - 3
+        decoded_password = f"{decoded_password}{digit}"
     return decoded_password
 
 def print_menu():
